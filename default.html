@@ -1,0 +1,90 @@
+<html>
+    <head>
+       <title>javascript programming language!</title>
+       <script type="text/javascript" src="default.js"></script>
+    </head>
+    <body>
+<label>Names: </label>
+<br><input id="text1" placeholder="enter a ur names"> <br>
+<label>Password:</label>
+<br><input type="password" id="text2" placeholder="enter a ur password"><br> 
+ <button onclick="fn1()" id="btn">Submit</button><br>
+
+<!---to select one at time, assign the same name as "name="kak""--->
+<br><br>
+<label> Sex:</label>
+ <br><input name="kak" type="radio" id="rd1" value="Male">Male</input>
+      <input name="kak" type="radio" id="rd2" value="Female">Female</input>
+      <br><button onclick="fn2()" id="btn1">Click Me</button>
+<br><br>
+<label>UR-Campus:</label>
+    <select name="Campus" id="camp">
+        <option value="Huye">huye</option>
+        <option value="Musanze">musanze</option>
+        <option value="Nyarugenge">nyarugenge</option>
+        <option value="Gikondo">gikondo</option>
+        <option value="Nyagatare">nyagatare</option>
+    </select>
+    <br>
+<button onclick="select()" id="btn3" >select</button>
+<br><br>
+<img id="img" onmouseover="
+changeimg()" onmouseout="oldimg()" src="images (1).png" alt="sunrise" width="150">
+
+<br><br>
+<!---form validation-->
+<br><br>
+<form onsubmit="return validate()">
+    <label>Username:</label>
+    <input id="user" type="text" placeholder="enter username"> 
+     <label id="lbl" style="color: red;visibility: hidden;">Invalid</label><br><br>
+     <label>Password:</label>
+    <input id="pass" type="password">
+    <label id="lbl2" style="color: red;visibility: hidden;">Invalid</label>
+    <br>
+    <button onclick="fn4()" id="btn4" type="submit">Submit</button>
+</form>
+<br><br> <!--regular expression/ email validation-->
+<form >
+    <label >Email</label>
+    <input id="email" type="text" placeholder="example@gmail.com">
+    <label id="lbl3" style="color: red;visibility: hidden;">Invalid Email</label>
+    <br>
+    <button id="btn6" onclick="fn6()">click me</button>
+</form>
+<br><br>4ne number validation <br><br>
+<form >
+    <label >Phone Number</label>
+    <input id="4ne" type="text" placeholder="enter your phone number">
+    <label id="lbl4" style="color: red;visibility: hidden;">Invalid number</label>
+    <br>
+    <button id="btn6" onclick="fn7()" type="button">click me</button>
+</form>
+<br><br>
+<!-- timing function -->
+<br><br>
+<button onclick="start()" id="strt" type="button">Start</button>
+<h2 id="msg">this msg will change after 5s</h2>
+<button onclick="stop()" id="end" type="button">End</button><br><br>
+<!--------------------------------------------------------------------------------->
+<br><br>
+<button onclick="begin()" id="strt1" type="button">Start</button>
+<h2 id="msg1">display seconds</h2>
+<button onclick="end()" id="end1" type="button">End</button>
+<br><br>
+<!--animation --->
+<br>
+-------------------------------
+<br><br>
+<img onmouseover="increase()" onmouseout="decrease()" id="img1" src="images (6).png" alt="image" width="100">
+    
+<script>
+    var firstName = 'kaka';
+    var age = 30;
+    var lastName = prompt('enter ur last name plz!!');
+    console.log("i am" +' ' +firstName + ' ' + lastName + ' ' + age + ' ' + "year old");
+</script>
+
+
+</body>
+</html>
